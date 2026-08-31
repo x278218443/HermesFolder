@@ -1,0 +1,36 @@
+model:
+  default: mimo-v2.5
+  provider: xiaomicoding
+  base_url: https://token-plan-cn.xiaomimimo.com/v1
+  api_key: YOUR_API_KEY_HERE
+  api_mode: chat_completions
+
+terminal:
+  backend: local
+  cwd: .
+  timeout: 180
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200
+  user_char_limit: 1375
+
+agent:
+  max_turns: 60
+  verbose: false
+  reasoning_effort: high
+
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+
+approvals:
+  mode: 'off'
+
+display:
+  compact: false
+  tool_progress: all
+  streaming: true
+  skin: default

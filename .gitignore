@@ -1,0 +1,23 @@
+# Hermes Profile Backup - .gitignore
+
+# 敏感文件
+.env
+.env.*
+*.key
+*.pem
+auth.json
+
+# 运行时文件（不需要备份）
+sessions/
+logs/
+state.db
+plans/
+workspace/
+home/
+*.pyc
+__pycache__/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
